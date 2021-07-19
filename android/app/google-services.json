@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "269117871038",
+    "project_id": "curvemetrics-cb204",
+    "storage_bucket": "curvemetrics-cb204.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269117871038:android:f7dc1442dfdee8e3c69fef",
+        "android_client_info": {
+          "package_name": "com.curvemetrics.shop_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269117871038-pu3b39p6ol7lol549nf6en1ob3s7ij0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgH9QUvWNUcQCBgjASXKKArmd-A7HGDKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269117871038-pu3b39p6ol7lol549nf6en1ob3s7ij0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
