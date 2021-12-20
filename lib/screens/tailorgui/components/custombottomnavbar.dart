@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop_app/screens/home/home_screen.dart';
-import 'package:shop_app/screens/profile/profile_screen.dart';
-
-import '../constants.dart';
-import '../enums.dart';
+import 'package:shop_app/enums.dart';
+import 'package:shop_app/constants.dart';
+import 'package:shop_app/screens/tailorgui/customprofile.dart';
+import 'package:shop_app/screens/tailorgui/customsale.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
+  // const CustomBottomNavBar({ Key? key }) : super(key: key);
   const CustomBottomNavBar({
     Key key,
     @required this.selectedMenu,
   }) : super(key: key);
-
   final MenuState selectedMenu;
-  // final homeroute = HomeScreen.routeName;
-  // final isNewRouteSameAsCurrent = false;
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +55,7 @@ class CustomBottomNavBar extends StatelessWidget {
                     //   }
                     // },
                     Navigator.of(context)
-                        .pushReplacementNamed(HomeScreen.routeName),
+                        .pushReplacementNamed(customsale.routeName),
               ),
               // IconButton(
               //   icon: SvgPicture.asset("assets/icons/Heart Icon.svg"),
@@ -76,7 +73,7 @@ class CustomBottomNavBar extends StatelessWidget {
                       : inActiveIconColor,
                 ),
                 onPressed: () =>
-                    Navigator.pushNamed(context, ProfileScreen.routeName),
+                    Navigator.pushNamed(context, customprofile.routeName),
                 //Navigator.of(context).pushReplacementNamed(ProfileScreen.routeName);
               ),
             ],

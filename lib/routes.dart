@@ -1,6 +1,9 @@
+// import 'dart:js';
+
 import 'package:flutter/widgets.dart';
 import 'package:shop_app/screens/cart/cart_screen.dart';
 import 'package:shop_app/screens/complete_profile/complete_profile_screen.dart';
+import 'package:shop_app/screens/details/components/order_place.dart';
 import 'package:shop_app/screens/details/details_screen.dart';
 import 'package:shop_app/screens/forgot_password/forgot_password_screen.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
@@ -9,6 +12,15 @@ import 'package:shop_app/screens/otp/otp_screen.dart';
 import 'package:shop_app/screens/profile/profile_screen.dart';
 import 'package:shop_app/screens/sign_in/sign_in_screen.dart';
 import 'package:shop_app/screens/splash/splash_screen.dart';
+import 'package:shop_app/screens/startup_view.dart';
+import 'package:shop_app/screens/tailorcustomer/tailcust.dart';
+import 'package:shop_app/screens/tailorgui/completeprofilescreen/completeprofilescreentailor.dart';
+import 'package:shop_app/screens/tailorgui/customprod.dart';
+import 'package:shop_app/screens/tailorgui/customprofile.dart';
+import 'package:shop_app/screens/tailorgui/customsale.dart';
+import 'package:shop_app/screens/tailorgui/tailorhome.dart';
+import 'package:shop_app/screens/tailorgui/tailorsignup/sign_up_screen.dart';
+import 'package:shop_app/screens/tailorlogin/tailorloginscreen.dart';
 
 import 'screens/sign_up/sign_up_screen.dart';
 
@@ -26,4 +38,15 @@ final Map<String, WidgetBuilder> routes = {
   DetailsScreen.routeName: (context) => DetailsScreen(),
   CartScreen.routeName: (context) => CartScreen(),
   ProfileScreen.routeName: (context) => ProfileScreen(),
+  StartUpView.routeName: (context) => StartUpView(),
+  tailcust.routeName: (context) => tailcust(),
+  tailorloginscreen.routeName: (context) => tailorloginscreen(),
+  customsale.routeName: (context) => customsale(),
+  customprofile.routeName: (context) => customprofile(),
+  tailorhome.routeName: (context) => tailorhome(),
+  orderplaced.routeName: (context) => orderplaced(),
+  customprod.routeName: (context) => customprod(),
+  SignUpScreentailor.routeName: (context) => SignUpScreentailor(),
+  CompleteProfileScreentailor.routeName: (context) =>
+      CompleteProfileScreentailor(),
 };

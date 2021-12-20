@@ -16,7 +16,7 @@ class Product {
     this.isFavourite = false,
     this.isPopular = false,
     @required this.title,
-    //@required this.price,
+    // @required this.price,
     this.price,
     @required this.description,
   });
@@ -28,19 +28,19 @@ List<Product> demoProducts = [
   Product(
     id: 1,
     images: [
-      "assets/images/model1.jpeg",
+      "assets/images/suit.jpg",
       //"assets/images/ps4_console_white_2.png",
       //"assets/images/ps4_console_white_3.png",
       //"assets/images/ps4_console_white_4.png",
     ],
     colors: [
-      Color(0xFFF6625E),
-      Color(0xFF836DB8),
-      Color(0xFFDECB9C),
-      Colors.white,
+      // Color(0xFFF6625E),
+      // Color(0xFF836DB8),
+      // Color(0xFFDECB9C),
+      Colors.brown,
     ],
-    title: "Suit 1 ™",
-    //price: 64.99,
+    title: "men's designer suit",
+    price: 80,
     description: description,
     rating: 4.8,
     isFavourite: true,
@@ -52,14 +52,14 @@ List<Product> demoProducts = [
       "assets/images/model2.jpeg",
     ],
     colors: [
-      Color(0xFFF6625E),
-      Color(0xFF836DB8),
-      Color(0xFFDECB9C),
-      Colors.white,
+      // Color(0xFFF6625E),
+      // Color(0xFF836DB8),
+      // Color(0xFFDECB9C),
+      Colors.black,
     ],
-    title: "Suit 2",
-    //price: 50.5,
-    description: description,
+    title: "Women's designer suit",
+    price: 40,
+    description: "Suit by Krishan Kumar",
     rating: 4.1,
     isPopular: true,
   ),
@@ -100,4 +100,4 @@ List<Product> demoProducts = [
   // ),
 ];
 
-const String description = "Suits for sale";
+const String description = "Tailor: Rajesh Sharma";
